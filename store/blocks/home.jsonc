@@ -202,13 +202,13 @@
   },
   "list-context.product-list": {
     "blocks": [
-      "product-summary.shelf"
+      "product-summary.shelf#home"
     ],
     "children": [
       "slider-layout"
     ]
   },
-  "product-summary.shelf": {
+  "product-summary.shelf#home": {
     "children": [
       "modal-trigger#quickview",
       "product-summary-name",
