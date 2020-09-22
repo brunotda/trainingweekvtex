@@ -1,3 +1,10 @@
+# VTEX TRAINING WEEK
+
+## Comandos insteressantes
+- CLI ` __runtime__.route.Params.Id` para capturar id do produto
+- Problema com rota? Aplciativo pode estar em concorrencia, execute `vtex workspace reset` e `link` novamente
+- Adicione na url `/?__inspect` para abrir o inspecionar elemento VTEX
+
 # Minimum Boilerplate Theme
 
 The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
