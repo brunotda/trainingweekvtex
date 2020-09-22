@@ -6,7 +6,8 @@
 - Adicione na url `/?__inspect` para abrir o inspecionar elemento VTEX
 
 ## Blocos interessantes
-- `"__fold__"`, lazyload abaixo **IMPORTANTE**. 
+- `"__fold__"`, lazyload abaixo **IMPORTANTE**.
+- `experimentalOptimizeRendering`, lazyload menu **importante**
 
 ### Há três diferentes tipos de workspaces
 - Workspace de desenvolvimento: um ambiente onde é possível linkar, desenvolver, instalar e publicar aplicações. É um workspace onde você tem mais liberdade nas configurações que irá fazer. Não lida com o tráfego de clientes de produção, não pode ser promovido a master e nem pode ser utilizado para testes A/B;
