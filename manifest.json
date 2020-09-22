@@ -1,6 +1,6 @@
 {
-  "vendor": "inventivo",
-  "name": "inventivo-theme",
+  "vendor": "appliancetheme",
+  "name": "trainingweek-inventivo",
   "version": "0.1.0",
   "builders": {
     "styles": "2.x",

@@ -1,6 +1,6 @@
 # VTEX TRAINING WEEK
 
-## Comandos insteressantes
+## Comandos interessantes
 - CLI ` __runtime__.route.Params.Id` para capturar id do produto
 - Problema com rota? Aplciativo pode estar em concorrencia, execute `vtex workspace reset` e `link` novamente
 - Adicione na url `/?__inspect` para abrir o inspecionar elemento VTEX
