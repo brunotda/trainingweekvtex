@@ -26,7 +26,7 @@
     },
     "rich-text#about-content": {
         "props": {
-            "text": " ### This is the VTEX Minimum Theme \n You can use it to test blocks usage and build your first store from scratch."
+            "text": " ### Our history \n This store was created to be used on **VTEX Training Week BRA**. You can click [here](https://trainingweekvtex.yazo.com.br/home) to know more about the courses! \n ### This is the VTEX Minimum Theme \n You can use it to test blocks usage and build your first store from scratch."
         }
     },
     "image#about-us": {
