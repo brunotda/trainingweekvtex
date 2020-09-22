@@ -1,3 +1,20 @@
+# VTEX TRAINING WEEK
+
+## Comandos interessantes
+- CLI ` __runtime__.route.Params.Id` para capturar id do produto
+- Problema com rota? Aplciativo pode estar em concorrencia, execute `vtex workspace reset` e `link` novamente
+- Adicione na url `/?__inspect` para abrir o inspecionar elemento VTEX
+
+## Blocos interessantes
+- `"__fold__"`, lazyload abaixo **IMPORTANTE**. 
+
+### Há três diferentes tipos de workspaces
+- Workspace de desenvolvimento: um ambiente onde é possível linkar, desenvolver, instalar e publicar aplicações. É um workspace onde você tem mais liberdade nas configurações que irá fazer. Não lida com o tráfego de clientes de produção, não pode ser promovido a master e nem pode ser utilizado para testes A/B;
+
+- Workspace de produção: lida com tráfego de lojas em produção, pode ser utilizado para testes A/B e pode ser promovido ao workspace master. Não é permitido linkar aplicações;
+
+- Workspace Master: um workspace de produção único em que o conteúdo dele reflete no que é apresentado ao usuário final da loja.
+
 # Minimum Boilerplate Theme
 
 The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
