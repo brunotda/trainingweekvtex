@@ -38,7 +38,10 @@
       "search-fetch-previous",
       "search-content",
       "search-fetch-more"
-    ]
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
   },
   "flex-layout.row#topContentSearch":{
     "children": [
