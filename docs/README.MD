@@ -58,3 +58,15 @@ Adicione no bloco do tema o seu bloco customizado
 ### TRADUÇÃO REQUER BILBIOTECA
 Adicionar react-intl na pasta react com o comando
 `yarn add react-intl`
+
+### Componentizando
+Adicione o novo componente do bloco do tema o seu bloco customizado   
+
+`{
+  "store.home": {
+    "blocks": [
+      "countdown",
+      "countdown.title"
+    ]
+  }
+}`
