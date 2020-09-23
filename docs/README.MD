@@ -70,3 +70,6 @@ Adicione o novo componente do bloco do tema o seu bloco customizado
     ]
   }
 }`
+
+#SERVIÇOS
+https://github.com/vtex-trainings/service-course-template

@@ -1,37 +1,40 @@
-import { ClientsConfig, LRUCache, Service, ServiceContext } from '@vtex/api'
-
+import {
+  LRUCache,
+  Service,
+  ServiceContext,
+  ParamsContext,
+  RecorderState,
+  method,
+} from '@vtex/api'
 import { Clients } from './clients'
+import { analytics } from './handlers/analytics'
 
-const TIMEOUT_MS = 5000
-
-const memoryCache = new LRUCache<string, any>({max: 5000})
+// Create a LRU memory cache for the Status client.
+// The @vtex/api HttpClient respects Cache-Control headers and uses the provided cache.
+const memoryCache = new LRUCache<string, any>({ max: 5000 })
 metrics.trackCache('status', memoryCache)
 
-const clients: ClientsConfig<Clients> = {
-  implementation: Clients,
-  options: {
-    default: {
-      retries: 2,
-      timeout: TIMEOUT_MS,
-    },
-    status: {
-      memoryCache,
-    },
-  },
-}
-
 declare global {
-  type Context = ServiceContext<Clients>
+  type Context = ServiceContext<Clients, State>
+
+  interface State extends RecorderState {
+    code: number
+  }
 }
 
-// Export a service that defines route handlers and client options.
-export default new Service<Clients, {}>({
-  clients,
-  graphql: {
-    resolvers: {
-      Query: {
-
+export default new Service<Clients, State, ParamsContext>({
+  clients: {
+    implementation: Clients,
+    options: {
+      default: {
+        retries: 2,
+        timeout: 10000,
       },
     },
+  },
+  routes: {
+    analytics: method({
+      GET: [analytics],
+    }),
   },
 })
