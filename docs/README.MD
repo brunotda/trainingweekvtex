@@ -22,16 +22,35 @@
 Here you'll learn how to create awesome Store Framework blocks!
 https://github.com/vtex-trainings/store-block-template
 
-### BLCOSO CUSTOMIZADOS
+## BLCOSO CUSTOMIZADOS
 De forma a torna a experiência de compra da loja única, é possível aplicar camadas de customização aos componentes já existentes, criar páginas customizadas, entre outras coisas.
 
-#### vendor
+### vendor
 Define o nome da conta VTEX que está desenvolvendo a app. Esta conta é responsável por sua manutenção e distribuição (a aplicação pode ser instalada em outras contas ou apenas na própria).
 
 `O vendor vtex é utilizado para apps nativas.`
 
-#### name
+### name
 Identifica o nome da aplicação. Não deve conter nenhum caractere especial (exceto por -, que é permitido) ou caracteres maiúsculos.
 
-####  version
+###  version
 Identifica a versão atual da app. Utilizamos a especificação de Versionamento Semântico 2.0.0. O formato é bem definido, dividido em releases de patch, minor ou major.
+
+--
+
+###  Aplicar sobre o tema:
+Adicione no tema a dependência (manifest.json)
+
+`"dependencies": {
+"vtex.countdown": "0.x"
+}`
+
+Adicione no bloco do tema o seu bloco customizado   
+
+`{
+  "store.home": {
+    "blocks": [
+      "countdown"
+    ]
+  }
+}`
