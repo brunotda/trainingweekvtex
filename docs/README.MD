@@ -54,3 +54,7 @@ Adicione no bloco do tema o seu bloco customizado
     ]
   }
 }`
+
+### TRADUÇÃO REQUER BILBIOTECA
+Adicionar react-intl na pasta react com o comando
+`yarn add react-intl`
