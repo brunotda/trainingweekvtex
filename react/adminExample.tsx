@@ -1,7 +1,10 @@
 import React, { FC } from 'react'
 import { Layout, PageBlock } from 'vtex.styleguide'
+import { useQuery } from 'react-apollo'
+import helloworld from './graphql/helloworld.gql'
 
 const AdminExample: FC = () => {
+    const { data } = useQuery(helloworld)
     return (
         <Layout>
             <PageBlock
@@ -9,6 +12,7 @@ const AdminExample: FC = () => {
                 subtitle="Alguma explicação."
                 variation="full">
                 <h1>Hi Lorena!</h1>
+                <p>{data?.helloworld}</p>
             </PageBlock>
         </Layout>
     )
