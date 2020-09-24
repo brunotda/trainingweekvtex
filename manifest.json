@@ -1,19 +1,20 @@
 {
-  "name": "backend-course",
-  "vendor": "vtex",
-  "version": "0.0.2",
-  "title": "Backend Course",
-  "description": "Reference app for the Backend Course",
+  "vendor": "appliancetheme",
+  "name": "admin-sandbox",
+  "version": "0.0.0",
+  "title": "Admin Sandbox Inventivo",
+  "description": "Admin Sandbox funções inventivo",
   "builders": {
-    "node": "6.x"
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
   },
-  "scripts": {
-    "prereleasy": "bash lint.sh"
-  },
-  "credentialType": "absolute",
-  "policies": [],
   "dependencies": {
-    "vtex.events-example": "0.x"
+    "vtex.styleguide": "9.x"
   },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

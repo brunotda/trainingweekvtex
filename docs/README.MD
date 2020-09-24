@@ -78,3 +78,11 @@ Adicione o novo componente do bloco do tema o seu bloco customizado
 Um dos fontes é reponsável por enviar dados e o outro por receber.
 https://github.com/vtex-apps/events-example
 https://github.com/vtex-trainings/service-course-template
+
+
+#Aplicação Administrativa
+Esta função é bloqueada, sendo necessário liberação pela vtex.
+NOTA: Se estiver fazendo o curso na sua própria loja e desenvolvendo sua própria app, lembre-se de que terá que passar pelo [form de whitelist](https://forms.gle/ovi4h7mnwgUKS2hu5).
+
+`git clone https://github.com/vtex-apps/react-app-template admin-course`
+
