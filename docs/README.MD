@@ -72,4 +72,9 @@ Adicione o novo componente do bloco do tema o seu bloco customizado
 }`
 
 #SERVIÇOS
+
+###ATENÇÃO RODAR OS DOIS FONTES PARA FUNCIONAR CORRETAMENTE
+
+Um dos fontes é reponsável por enviar dados e o outro por receber.
 https://github.com/vtex-apps/events-example
+https://github.com/vtex-trainings/service-course-template
